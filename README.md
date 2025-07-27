@@ -36,6 +36,7 @@
 
   // Verify
   df.head()
-  
   ```
+  <img width="1734" height="472" alt="Loading the dataset and checking for the top 5 row" src="https://github.com/user-attachments/assets/f316bf84-95b6-49e6-9d53-638ce358f895" />
+
 
