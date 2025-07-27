@@ -118,15 +118,8 @@ df['fare_amount'].describe()
 
 <img width="705" height="478" alt="Screenshot 2025-07-27 231740" src="https://github.com/user-attachments/assets/bb7e1f89-3a51-4929-b2bf-f8d8cf1379c4" />
 
-<img width="727" height="426" alt="Screenshot 2025-07-27 231752" src="https://github.com/user-attachments/assets/b352defb-79a7-4578-a41c-dbf9a595bcb6" />
+<img width="1141" height="729" alt="Screenshot 2025-07-27 232708" src="https://github.com/user-attachments/assets/12ad707a-af96-43a5-8e49-e842b7497896" />
 
-<img width="712" height="539" alt="Screenshot 2025-07-27 231805" src="https://github.com/user-attachments/assets/1dffaa15-a313-4252-967a-1598eebf0559" />
-
-<img width="738" height="514" alt="Screenshot 2025-07-27 231817" src="https://github.com/user-attachments/assets/318f235a-e822-4381-85b7-e74c4d87a0e6" />
-
-<img width="725" height="456" alt="Screenshot 2025-07-27 231826" src="https://github.com/user-attachments/assets/bd59a8f4-f83a-4591-a2fe-e51ea9a2dbfe" />
-
-<img width="1168" height="693" alt="Screenshot 2025-07-27 231843" src="https://github.com/user-attachments/assets/0f08fdb4-a236-46f7-a73f-8b0531d359c6" />
 
 ## Analysis
 
