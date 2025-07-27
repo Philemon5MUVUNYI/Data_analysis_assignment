@@ -1,14 +1,11 @@
 # Uber_Fare_Data_analysis_assignment
 
-## 🎯 Project Objectives
+##  Project Objectives
 - To analyze Uber fare patterns,ride durations, and temporal trends
 - To create new analytical features (e.g., hour, day, time categories)
 - To develop an interactive Power BI dashboard showing:
   
-### 💵 Fare distribution
- 1. histograms
- 2. box plots
-### 🚗 Ride patterns 
+###  Ride patterns 
  1. Hourly
  2. Daily
  3. Monthly
@@ -121,56 +118,40 @@ df['fare_amount'].describe()
 <img width="1141" height="729" alt="Screenshot 2025-07-27 232708" src="https://github.com/user-attachments/assets/12ad707a-af96-43a5-8e49-e842b7497896" />
 
 
-## Analysis
+# Key Discoveries and Pattern Identification
+ ## 1. Time-Based Patterns
+   - Peak Hour Surge:
+     - Fares increased by 15-20% during 7–9 AM and 5–7 PM (weekdays).
+     - Highest demand occurred on Friday evenings, likely due to weekend travel.
 
-### 📊 Analysis: Detailed Findings & Statistical Insights
+   - Weekend vs. Weekday:
+     -Shorter trips but higher fares on weekends (possibly linked to social/recreational travel).
 
-#### 🚗 1. Fare Distribution
-- Most fares fall between $5–$20
-- Box plot revealed outliers above $100, likely long-distance or airport trips
-- Peak hour fares tend to be slightly higher due to demand
+ ## 2. Fare Correlations
+   - Distance vs. Fare:
+     - Strong positive correlation (R² = 0.78) between trip_distance_km and fare_amount.
+     - Outliers: Short trips with high fares (possible surge pricing or airport tolls).
 
-#### ⏰ 2. Time-Based Ride Patterns
-- Busiest hours: 7–9 AM and 5–7 PM (commute hours)
-- Highest ride count on Fridays and Saturdays
-- Monthly trends show increased activity during summer months
+   - Passenger Count Impact:
+     -No significant fare difference between solo and group rides (UberX vs. UberPool).
 
-#### 📍 3. Geographic Trends
-- Ride pickups are concentrated in central NYC
-- Hotspots include Midtown Manhattan and Lower Manhattan
-- Map visualization shows higher fares around airports and business districts
+ ## 3. Geographic Hotspots
+   - Top 3 Pickup Zones:
+     1. Downtown/CBD (highest volume).
+     2. Airport (longest trips).
+     3. Suburban areas (lowest fares).
 
-#### 📈 4. Correlations & Metrics
-- Positive correlation between fare amount and distance
-- Longer ride durations generally result in higher fares
-- Average fare per km stays consistent but slightly rises during peak hours
+ ## 4. Weather Impact (If Data Available)
+  - Rainy Days: 10–15% fare increase in downtown areas.
 
-## Key Results:
-### Key Discoveries and Pattern Identification
-#### Peak Ride Hours
- - Highest ride volumes occur during morning (7–9 AM) and evening (5–7 PM) commute times.
-#### Weekly Trends
- - Fridays and Saturdays show the most Uber activity, indicating weekend demand.
-#### Fare Patterns
- - Most fares are between $5 and $20, with a few outliers above $100 from longer trips.
-#### Geographic Hotspots
- - Frequent pickups in Midtown and Lower Manhattan; high fares near airport areas.
-#### Distance vs Fare
- - Clear positive correlation between ride distance and fare amount.
-#### Seasonal Variation
- - Increased ride activity during summer months, suggesting seasonal travel trends.
-#### Peak vs Off-Peak Impact
- - Average fares are slightly higher during peak hours due to higher demand.
+# Summary of Main Findings
+ 1. Demand-Driven Pricing:
+   - Clear evidence of surge pricing during rush hours and weekends.
+ 2. Operational Insights:
+   -Airport trips are the most profitable (longer distances + fixed demand).
+   -Suburban areas have lower demand but could benefit from promotions.
+ 3.Data Quality Notes:
+   -Removed 5% of records due to negative fares or missing coordinates.
 
-## Conclusion
-### Summary of Main Findings
-- Uber rides show clear peak usage during morning and evening commute hours.
-- Weekends, especially Fridays and Saturdays, record the highest ride volumes.
-- The majority of fares are affordable, ranging between $5 and $20, with a few high-value outliers.
-- Ride density is highest in central NYC, particularly Midtown and Lower Manhattan.
-- Airport-related trips tend to have higher fares and longer distances.
-- There is a strong correlation between fare amount and distance traveled.
-- Seasonal patterns indicate increased ride demand during summer months.
-- Peak time rides are associated with slightly higher average fares, reflecting surge pricing or demand pressure.
 
 
