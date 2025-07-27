@@ -104,4 +104,72 @@ df.to_csv('uber_enhanced.csv', index=False)
 print("Enhanced dataset saved successfully!")
 ```
 
+```python
+#Data cleaning 
+#Keep positive fare
+df = df[df['fare_amount'] > 0]
+# Adjust threshold based on data
+df = df[df['fare_amount'] < 100]
+
+# Check results
+df['fare_amount'].describe()
+```
+<img width="379" height="242" alt="Screenshot 2025-07-27 231202" src="https://github.com/user-attachments/assets/f4394ef1-4ecc-4201-afd6-cc5ff3cfab8d" />
+
+<img width="705" height="478" alt="Screenshot 2025-07-27 231740" src="https://github.com/user-attachments/assets/bb7e1f89-3a51-4929-b2bf-f8d8cf1379c4" />
+
+<img width="727" height="426" alt="Screenshot 2025-07-27 231752" src="https://github.com/user-attachments/assets/b352defb-79a7-4578-a41c-dbf9a595bcb6" />
+
+<img width="712" height="539" alt="Screenshot 2025-07-27 231805" src="https://github.com/user-attachments/assets/1dffaa15-a313-4252-967a-1598eebf0559" />
+
+<img width="738" height="514" alt="Screenshot 2025-07-27 231817" src="https://github.com/user-attachments/assets/318f235a-e822-4381-85b7-e74c4d87a0e6" />
+
+<img width="725" height="456" alt="Screenshot 2025-07-27 231826" src="https://github.com/user-attachments/assets/bd59a8f4-f83a-4591-a2fe-e51ea9a2dbfe" />
+
+<img width="1168" height="693" alt="Screenshot 2025-07-27 231843" src="https://github.com/user-attachments/assets/0f08fdb4-a236-46f7-a73f-8b0531d359c6" />
+
+## Analysis
+
+### 📊 Analysis: Detailed Findings & Statistical Insights
+
+#### 🚗 1. Fare Distribution
+- Most fares fall between $5–$20
+- Box plot revealed outliers above $100, likely long-distance or airport trips
+- Peak hour fares tend to be slightly higher due to demand
+
+#### ⏰ 2. Time-Based Ride Patterns
+- Busiest hours: 7–9 AM and 5–7 PM (commute hours)
+- Highest ride count on Fridays and Saturdays
+- Monthly trends show increased activity during summer months
+
+#### 📍 3. Geographic Trends
+- Ride pickups are concentrated in central NYC
+- Hotspots include Midtown Manhattan and Lower Manhattan
+- Map visualization shows higher fares around airports and business districts
+
+#### 📈 4. Correlations & Metrics
+- Positive correlation between fare amount and distance
+- Longer ride durations generally result in higher fares
+- Average fare per km stays consistent but slightly rises during peak hours
+
+## Key Results:
+### Key Discoveries and Pattern Identification
+#### Peak Ride Hours
+ - Highest ride volumes occur during morning (7–9 AM) and evening (5–7 PM) commute times.
+#### Weekly Trends
+ - Fridays and Saturdays show the most Uber activity, indicating weekend demand.
+#### Fare Patterns
+ - Most fares are between $5 and $20, with a few outliers above $100 from longer trips.
+#### Geographic Hotspots
+ - Frequent pickups in Midtown and Lower Manhattan; high fares near airport areas.
+#### Distance vs Fare
+ - Clear positive correlation between ride distance and fare amount.
+#### Seasonal Variation
+ - Increased ride activity during summer months, suggesting seasonal travel trends.
+#### Peak vs Off-Peak Impact
+ - Average fares are slightly higher during peak hours due to higher demand.
+
+## Conclusion
+
+
 
