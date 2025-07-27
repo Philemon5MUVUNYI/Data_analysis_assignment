@@ -170,6 +170,14 @@ df['fare_amount'].describe()
  - Average fares are slightly higher during peak hours due to higher demand.
 
 ## Conclusion
-
+### Summary of Main Findings
+- Uber rides show clear peak usage during morning and evening commute hours.
+- Weekends, especially Fridays and Saturdays, record the highest ride volumes.
+- The majority of fares are affordable, ranging between $5 and $20, with a few high-value outliers.
+- Ride density is highest in central NYC, particularly Midtown and Lower Manhattan.
+- Airport-related trips tend to have higher fares and longer distances.
+- There is a strong correlation between fare amount and distance traveled.
+- Seasonal patterns indicate increased ride demand during summer months.
+- Peak time rides are associated with slightly higher average fares, reflecting surge pricing or demand pressure.
 
 
