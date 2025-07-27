@@ -31,10 +31,11 @@
   ```python
   import pandas as pd
 
-# Load the cleaned CSV from Phase 1
-df = pd.read_csv('uber_cleaned.csv')
+  // Load the cleaned CSV from Phase 1
+  df = pd.read_csv('uber_cleaned.csv')
 
-// Verify
-df.head()
+  // Verify
+  df.head()
+  
   ```
 
